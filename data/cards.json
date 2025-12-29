@@ -1,0 +1,2004 @@
+{
+    "metadata": {
+        "version": "1.3.0",
+        "cardCount": 105,
+        "source": "Manual Digitization with 4 icons"
+    },
+    "cards": [
+        {
+            "name": "Élevage",
+            "age": 1,
+            "color": "YELLOW",
+            "icons": [
+                "CASTLE",
+                "CROWN",
+                1,
+                "CASTLE"
+            ],
+            "dogmas": [
+                {
+                    "symbol": "CASTLE",
+                    "text": "Mettez en jeu la carte la plus basse de votre Main. Piochez une 1.",
+                    "isSupremacy": false
+                }
+            ],
+            "expansion": "Base"
+        },
+        {
+            "name": "Agriculture",
+            "age": 1,
+            "color": "YELLOW",
+            "icons": [
+                1,
+                "LEAF",
+                "LEAF",
+                "LEAF"
+            ],
+            "dogmas": [
+                {
+                    "symbol": "LEAF",
+                    "text": "Vous pouvez recycler une carte de votre Main. Si vous le faites, piochez une carte d'une valeur supérieure de un à celle que vous avez recyclée et comptabilisez-la.",
+                    "isSupremacy": false
+                }
+            ],
+            "expansion": "Base"
+        },
+        {
+            "name": "Métallurgie",
+            "age": 1,
+            "color": "RED",
+            "icons": [
+                "CASTLE",
+                "CASTLE",
+                1,
+                "CASTLE"
+            ],
+            "dogmas": [
+                {
+                    "symbol": "CASTLE",
+                    "text": "Piochez une 1 et montrez-la. Si elle produit du [Castle], comptabilisez-la et répétez ce Dogme. Sinon, ajoutez-la à votre Main.",
+                    "isSupremacy": false
+                }
+            ],
+            "expansion": "Base"
+        },
+        {
+            "name": "Tissage",
+            "age": 1,
+            "color": "GREEN",
+            "icons": [
+                1,
+                "CROWN",
+                "LEAF",
+                "LEAF"
+            ],
+            "dogmas": [
+                {
+                    "symbol": "LEAF",
+                    "text": "Mettez en jeu une carte d'une couleur que vous n'avez pas encore dans votre Zone de Jeu. Piochez une 1 pour chaque couleur figurant dans votre Zone de Jeu et ne figurant dans la Zone de Jeu d'aucun autre joueur et comptabilisez-la.",
+                    "isSupremacy": false
+                }
+            ],
+            "expansion": "Base"
+        },
+        {
+            "name": "Outils",
+            "age": 1,
+            "color": "BLUE",
+            "icons": [
+                1,
+                "LIGHTBULB",
+                "LIGHTBULB",
+                "CASTLE"
+            ],
+            "dogmas": [
+                {
+                    "symbol": "LIGHTBULB",
+                    "text": "Vous pouvez recycler trois cartes de votre Main. Si vous le faites, piochez une 3 et mettez-la en jeu.\nVous pouvez recycler une 3 de votre Main. Si vous le faites, piochez trois 1.",
+                    "isSupremacy": false
+                }
+            ],
+            "expansion": "Base"
+        },
+        {
+            "name": "Écriture",
+            "age": 1,
+            "color": "BLUE",
+            "icons": [
+                1,
+                "LIGHTBULB",
+                "LIGHTBULB",
+                "CROWN"
+            ],
+            "dogmas": [
+                {
+                    "symbol": "LIGHTBULB",
+                    "text": "Piochez une 2.",
+                    "isSupremacy": false
+                }
+            ],
+            "expansion": "Base"
+        },
+        {
+            "name": "Mysticisme",
+            "age": 1,
+            "color": "PURPLE",
+            "icons": [
+                1,
+                "CASTLE",
+                "CASTLE",
+                "CASTLE"
+            ],
+            "dogmas": [
+                {
+                    "symbol": "CASTLE",
+                    "text": "Piochez une 1 et montrez-la. Si elle est de la même couleur qu'une autre carte dans votre Zone de Jeu, mettez-la en jeu et piochez une 1. Sinon, ajoutez-la à votre Main.",
+                    "isSupremacy": false
+                }
+            ],
+            "expansion": "Base"
+        },
+        {
+            "name": "Rames",
+            "age": 1,
+            "color": "RED",
+            "icons": [
+                "CASTLE",
+                "CROWN",
+                1,
+                "CASTLE"
+            ],
+            "dogmas": [
+                {
+                    "symbol": "CASTLE",
+                    "text": "J'exige que vous transfériez une carte qui produit du [Crown] de votre Main vers mon Influence ! Si vous subissez ce Dogme, piochez une 1 !\nSi aucune carte n'a été transférée suite au Dogme de Suprématie, piochez une 1.",
+                    "isSupremacy": true
+                }
+            ],
+            "expansion": "Base"
+        },
+        {
+            "name": "Archerie",
+            "age": 1,
+            "color": "RED",
+            "icons": [
+                "CASTLE",
+                "CASTLE",
+                1,
+                "CASTLE"
+            ],
+            "dogmas": [
+                {
+                    "symbol": "CASTLE",
+                    "text": "J'exige que vous piochiez une 1 ! Puis que vous transfériez la carte la plus élevée de votre Main vers la mienne !",
+                    "isSupremacy": true
+                }
+            ],
+            "expansion": "Base"
+        },
+        {
+            "name": "Cités-États",
+            "age": 1,
+            "color": "PURPLE",
+            "icons": [
+                1,
+                "CASTLE",
+                "CROWN",
+                "CASTLE"
+            ],
+            "dogmas": [
+                {
+                    "symbol": "CROWN",
+                    "text": "J'exige, si vous produisez quatre [Castle] ou plus, que vous transfériez une de vos cartes Actives qui produit du [Castle] vers ma Zone de Jeu ! Si vous subissez ce Dogme, piochez une 1 !",
+                    "isSupremacy": true
+                }
+            ],
+            "expansion": "Base"
+        },
+        {
+            "name": "Maçonnerie",
+            "age": 1,
+            "color": "YELLOW",
+            "icons": [
+                "CASTLE",
+                1,
+                "CASTLE",
+                "CASTLE"
+            ],
+            "dogmas": [
+                {
+                    "symbol": "CASTLE",
+                    "text": "Vous pouvez mettre en jeu autant de cartes qui produisent du [Castle] que vous voulez. Si vous en avez mis quatre en jeu ou plus, dominez le Domaine des TECHNOLOGIES.",
+                    "isSupremacy": false
+                }
+            ],
+            "expansion": "Base"
+        },
+        {
+            "name": "La Roue",
+            "age": 1,
+            "color": "GREEN",
+            "icons": [
+                1,
+                "CASTLE",
+                "CASTLE",
+                "CASTLE"
+            ],
+            "dogmas": [
+                {
+                    "symbol": "CASTLE",
+                    "text": "Piochez deux 1.",
+                    "isSupremacy": false
+                }
+            ],
+            "expansion": "Base"
+        },
+        {
+            "name": "Voiles",
+            "age": 1,
+            "color": "GREEN",
+            "icons": [
+                "CROWN",
+                "CROWN",
+                1,
+                "LEAF"
+            ],
+            "dogmas": [
+                {
+                    "symbol": "CROWN",
+                    "text": "Piochez une 1 et mettez-la en jeu.",
+                    "isSupremacy": false
+                }
+            ],
+            "expansion": "Base"
+        },
+        {
+            "name": "Poterie",
+            "age": 1,
+            "color": "BLUE",
+            "icons": [
+                1,
+                "LEAF",
+                "LEAF",
+                "LEAF"
+            ],
+            "dogmas": [
+                {
+                    "symbol": "LEAF",
+                    "text": "Vous pouvez recycler jusqu'à trois cartes de votre Main. Si vous le faites, piochez une carte d'une valeur égale au nombre de cartes recyclées et comptabilisez-la.\nPiochez une 1.",
+                    "isSupremacy": false
+                }
+            ],
+            "expansion": "Base"
+        },
+        {
+            "name": "Code de lois",
+            "age": 1,
+            "color": "PURPLE",
+            "icons": [
+                1,
+                "CROWN",
+                "CROWN",
+                "LEAF"
+            ],
+            "dogmas": [
+                {
+                    "symbol": "CROWN",
+                    "text": "Vous pouvez archiver une carte de votre Main d'une couleur que vous avez déjà en jeu. Si vous le faites, vous pouvez décaler cette couleur à gauche.",
+                    "isSupremacy": false
+                }
+            ],
+            "expansion": "Base"
+        },
+        {
+            "name": "Calendrier",
+            "age": 2,
+            "color": "BLUE",
+            "icons": [
+                "LEAF",
+                "LEAF",
+                "LEAF",
+                "LIGHTBULB"
+            ],
+            "dogmas": [
+                {
+                    "symbol": "LEAF",
+                    "text": "Si vous avez plus de cartes dans votre Influence que dans votre Main, piochez deux 3.",
+                    "isSupremacy": false
+                }
+            ],
+            "expansion": "Base"
+        },
+        {
+            "name": "Philosophie",
+            "age": 2,
+            "color": "PURPLE",
+            "icons": [
+                2,
+                "LIGHTBULB",
+                "LIGHTBULB",
+                "LIGHTBULB"
+            ],
+            "dogmas": [
+                {
+                    "symbol": "LIGHTBULB",
+                    "text": "Vous pouvez décaler une de vos couleurs à gauche. Vous pouvez comptabiliser une carte de votre Main.",
+                    "isSupremacy": false
+                }
+            ],
+            "expansion": "Base"
+        },
+        {
+            "name": "Construction de canaux",
+            "age": 2,
+            "color": "YELLOW",
+            "icons": [
+                2,
+                "CROWN",
+                "LEAF",
+                "CROWN"
+            ],
+            "dogmas": [
+                {
+                    "symbol": "CROWN",
+                    "text": "Vous pouvez échanger toutes les cartes ayant la valeur la plus élevée de votre Main avec toutes les cartes ayant la valeur la plus élevée de votre Influence.",
+                    "isSupremacy": false
+                }
+            ],
+            "expansion": "Base"
+        },
+        {
+            "name": "Monothéisme",
+            "age": 2,
+            "color": "PURPLE",
+            "icons": [
+                2,
+                "CASTLE",
+                "CASTLE",
+                "CASTLE"
+            ],
+            "dogmas": [
+                {
+                    "symbol": "CASTLE",
+                    "text": "J'exige que vous transfériez une de vos cartes Actives ayant une couleur que je n'ai pas dans ma Zone de Jeu vers mon Influence ! Si vous subissez ce Dogme, piochez une 1 et archivez-la. Piochez une 1 et archivez-la.",
+                    "isSupremacy": true
+                }
+            ],
+            "expansion": "Base"
+        },
+        {
+            "name": "Monnaie",
+            "age": 2,
+            "color": "GREEN",
+            "icons": [
+                2,
+                "LEAF",
+                "CROWN",
+                "CROWN"
+            ],
+            "dogmas": [
+                {
+                    "symbol": "CROWN",
+                    "text": "Vous pouvez recycler autant de cartes de votre Main que vous voulez. Si vous le faites, piochez une 2 pour chaque carte recyclée de valeur différente et comptabilisez-la.",
+                    "isSupremacy": false
+                }
+            ],
+            "expansion": "Base"
+        },
+        {
+            "name": "Construction",
+            "age": 2,
+            "color": "RED",
+            "icons": [
+                "CASTLE",
+                2,
+                "CASTLE",
+                "CASTLE"
+            ],
+            "dogmas": [
+                {
+                    "symbol": "CASTLE",
+                    "text": "J'exige que vous transfériez deux cartes de votre Main vers la mienne ! Piochez une 2 ! Si vous êtes le seul joueur avec cinq couleurs en jeu, dominez le Domaine MILITAIRE.",
+                    "isSupremacy": true
+                }
+            ],
+            "expansion": "Base"
+        },
+        {
+            "name": "Mathématiques",
+            "age": 2,
+            "color": "BLUE",
+            "icons": [
+                "LIGHTBULB",
+                "LIGHTBULB",
+                "CROWN",
+                "LIGHTBULB"
+            ],
+            "dogmas": [
+                {
+                    "symbol": "LIGHTBULB",
+                    "text": "Vous pouvez recycler une carte de votre Main. Si vous le faites, piochez une carte d'une valeur supérieure de un à celle de la carte recyclée et mettez-la en jeu.",
+                    "isSupremacy": false
+                }
+            ],
+            "expansion": "Base"
+        },
+        {
+            "name": "Cartographie",
+            "age": 2,
+            "color": "GREEN",
+            "icons": [
+                "CROWN",
+                "CROWN",
+                "CROWN",
+                "CASTLE"
+            ],
+            "dogmas": [
+                {
+                    "symbol": "CROWN",
+                    "text": "J'exige que vous transfériez une 1 de votre Influence (si elle en contient) vers la mienne ! Si une carte a été transférée suite au Dogme, piochez une 1 et comptabilisez-la.",
+                    "isSupremacy": true
+                }
+            ],
+            "expansion": "Base"
+        },
+        {
+            "name": "Réseau Routier",
+            "age": 2,
+            "color": "RED",
+            "icons": [
+                "CASTLE",
+                "CASTLE",
+                2,
+                "CASTLE"
+            ],
+            "dogmas": [
+                {
+                    "symbol": "CASTLE",
+                    "text": "Mettez en jeu une ou deux cartes de votre Main. Si vous en avez mis deux en jeu, vous pouvez transférer votre carte Active rouge vers la Zone de Jeu d'un autre joueur. Si vous le faites, transférez sa carte Active verte vers votre Zone de Jeu.",
+                    "isSupremacy": false
+                }
+            ],
+            "expansion": "Base"
+        },
+        {
+            "name": "Fermentation",
+            "age": 2,
+            "color": "YELLOW",
+            "icons": [
+                "LEAF",
+                "LEAF",
+                2,
+                "LEAF"
+            ],
+            "dogmas": [
+                {
+                    "symbol": "LEAF",
+                    "text": "Piochez une 2 pour chaque deux [Leaf] que vous produisez.",
+                    "isSupremacy": false
+                }
+            ],
+            "expansion": "Base"
+        },
+        {
+            "name": "Médecine",
+            "age": 3,
+            "color": "YELLOW",
+            "icons": [
+                3,
+                "LEAF",
+                "LEAF",
+                "LEAF"
+            ],
+            "dogmas": [
+                {
+                    "symbol": "LEAF",
+                    "text": "J'exige que vous échangiez la carte la plus élevée de votre Influence contre la carte la plus basse de la mienne !",
+                    "isSupremacy": true
+                }
+            ],
+            "expansion": "Base"
+        },
+        {
+            "name": "Alchimie",
+            "age": 3,
+            "color": "BLUE",
+            "icons": [
+                3,
+                "LEAF",
+                "CASTLE",
+                "CASTLE"
+            ],
+            "dogmas": [
+                {
+                    "symbol": "CASTLE",
+                    "text": "Piochez une 4 pour chaque trois [Castle] que vous produisez et montrez-la. Si l'une des cartes piochées est rouge, recyclez-les toutes ainsi que toutes les cartes de votre Main. Sinon, ajoutez-les à votre Main. Mettez en jeu une carte de votre Main, puis comptabilisez une carte de votre Main.",
+                    "isSupremacy": false
+                }
+            ],
+            "expansion": "Base"
+        },
+        {
+            "name": "Traduction",
+            "age": 3,
+            "color": "BLUE",
+            "icons": [
+                "CROWN",
+                "CROWN",
+                "CROWN",
+                "CROWN"
+            ],
+            "dogmas": [
+                {
+                    "symbol": "CROWN",
+                    "text": "Vous pouvez mettre en jeu toutes les cartes de votre Influence. Si toutes vos cartes Actives produisent du [Crown], dominez le Domaine de la DIPLOMATIE.",
+                    "isSupremacy": false
+                }
+            ],
+            "expansion": "Base"
+        },
+        {
+            "name": "Boussole",
+            "age": 3,
+            "color": "GREEN",
+            "icons": [
+                3,
+                "CROWN",
+                "CROWN",
+                "LEAF"
+            ],
+            "dogmas": [
+                {
+                    "symbol": "CROWN",
+                    "text": "J'exige que vous transfériez une de vos cartes Actives non-vertes qui produit du [Leaf] vers ma Zone de Jeu ! Puis que vous transfériez une de mes cartes Actives qui ne produit pas du [Leaf] vers votre Zone de Jeu !",
+                    "isSupremacy": true
+                }
+            ],
+            "expansion": "Base"
+        },
+        {
+            "name": "Optique",
+            "age": 3,
+            "color": "RED",
+            "icons": [
+                "CROWN",
+                "CROWN",
+                "CROWN",
+                3
+            ],
+            "dogmas": [
+                {
+                    "symbol": "CROWN",
+                    "text": "Piochez une 3 et mettez-la en jeu. Si elle produit du [Crown], piochez une 4 et comptabilisez-la. Sinon, transférez une carte de votre Influence vers celle d'un adversaire qui a moins de points d'Influence que vous.",
+                    "isSupremacy": false
+                }
+            ],
+            "expansion": "Base"
+        },
+        {
+            "name": "Féodalisme",
+            "age": 3,
+            "color": "PURPLE",
+            "icons": [
+                3,
+                "CASTLE",
+                "LEAF",
+                "CASTLE"
+            ],
+            "dogmas": [
+                {
+                    "symbol": "CASTLE",
+                    "text": "J'exige que vous transfériez une carte qui produit du [Castle] de votre Main vers la mienne ! Vous pouvez décaler vos cartes jaunes ou mauves à gauche.",
+                    "isSupremacy": true
+                }
+            ],
+            "expansion": "Base"
+        },
+        {
+            "name": "Éducation",
+            "age": 3,
+            "color": "PURPLE",
+            "icons": [
+                "LIGHTBULB",
+                "LIGHTBULB",
+                "LIGHTBULB",
+                3
+            ],
+            "dogmas": [
+                {
+                    "symbol": "LIGHTBULB",
+                    "text": "Vous pouvez recycler la carte la plus élevée de votre Influence. Si vous le faites, piochez une carte d'une valeur supérieure de deux à celle de la carte la plus élevée qui reste dans votre Influence.",
+                    "isSupremacy": false
+                }
+            ],
+            "expansion": "Base"
+        },
+        {
+            "name": "Ingénierie",
+            "age": 3,
+            "color": "RED",
+            "icons": [
+                "CASTLE",
+                3,
+                "LIGHTBULB",
+                "CASTLE"
+            ],
+            "dogmas": [
+                {
+                    "symbol": "LIGHTBULB",
+                    "text": "J'exige que vous transfériez toutes vos cartes Actives qui produisent du [Castle] vers mon Influence ! Vous pouvez décaler vos cartes rouges à gauche.",
+                    "isSupremacy": true
+                }
+            ],
+            "expansion": "Base"
+        },
+        {
+            "name": "Machinerie",
+            "age": 3,
+            "color": "YELLOW",
+            "icons": [
+                3,
+                "LEAF",
+                "LEAF",
+                "CASTLE"
+            ],
+            "dogmas": [
+                {
+                    "symbol": "LEAF",
+                    "text": "J'exige que vous échangiez toutes les cartes de votre Main contre toutes les cartes ayant la valeur la plus élevée de ma Main ! Comptabilisez une carte de votre Main qui produit du [Castle]. Vous pouvez décaler vos cartes rouges à gauche.",
+                    "isSupremacy": true
+                }
+            ],
+            "expansion": "Base"
+        },
+        {
+            "name": "Papier",
+            "age": 3,
+            "color": "GREEN",
+            "icons": [
+                "LIGHTBULB",
+                "LIGHTBULB",
+                "LIGHTBULB",
+                "CROWN"
+            ],
+            "dogmas": [
+                {
+                    "symbol": "LIGHTBULB",
+                    "text": "Vous pouvez décaler vos cartes vertes ou bleues à gauche. Piochez une 4 pour chaque couleur décalée à gauche que vous possédez.",
+                    "isSupremacy": false
+                }
+            ],
+            "expansion": "Base"
+        },
+        {
+            "name": "Imprimerie",
+            "age": 4,
+            "color": "BLUE",
+            "icons": [
+                4,
+                "LIGHTBULB",
+                "LIGHTBULB",
+                "CROWN"
+            ],
+            "dogmas": [
+                {
+                    "symbol": "LIGHTBULB",
+                    "text": "Vous pouvez recycler une carte de votre Influence. Si vous le faites, piochez une carte d'une valeur supérieure de deux à votre carte Active mauve. Vous pouvez décaler vos cartes bleues à droite.",
+                    "isSupremacy": false
+                }
+            ],
+            "expansion": "Base"
+        },
+        {
+            "name": "Perspective",
+            "age": 4,
+            "color": "YELLOW",
+            "icons": [
+                4,
+                "LIGHTBULB",
+                "LIGHTBULB",
+                "LEAF"
+            ],
+            "dogmas": [
+                {
+                    "symbol": "LIGHTBULB",
+                    "text": "Vous pouvez recycler une carte de votre Main. Si vous le faites, comptabilisez une carte de votre Main pour chaque deux [Bulb] que vous produisez.",
+                    "isSupremacy": false
+                }
+            ],
+            "expansion": "Base"
+        },
+        {
+            "name": "Droit des sociétés",
+            "age": 4,
+            "color": "PURPLE",
+            "icons": [
+                4,
+                "CROWN",
+                "CROWN",
+                "CROWN"
+            ],
+            "dogmas": [
+                {
+                    "symbol": "CROWN",
+                    "text": "J'exige que vous transfériez une de vos cartes Actives non-mauves qui produit du [Crown] vers ma Zone de Jeu ! Si vous subissez ce Dogme, piochez une 4 et mettez-la en jeu ! Vous pouvez décaler vos cartes vertes à droite.",
+                    "isSupremacy": true
+                }
+            ],
+            "expansion": "Base"
+        },
+        {
+            "name": "Colonialisme",
+            "age": 4,
+            "color": "RED",
+            "icons": [
+                4,
+                "LIGHTBULB",
+                "LIGHTBULB",
+                "FACTORY"
+            ],
+            "dogmas": [
+                {
+                    "symbol": "LIGHTBULB",
+                    "text": "Piochez une 3 et archivez-la. Si elle produit du [Bulb], répétez ce Dogme.",
+                    "isSupremacy": false
+                }
+            ],
+            "expansion": "Base"
+        },
+        {
+            "name": "Navigation",
+            "age": 4,
+            "color": "GREEN",
+            "icons": [
+                4,
+                "CROWN",
+                "CROWN",
+                "CROWN"
+            ],
+            "dogmas": [
+                {
+                    "symbol": "CROWN",
+                    "text": "J'exige que vous transfériez une 2 ou une 3 de votre Influence vers la mienne !",
+                    "isSupremacy": true
+                }
+            ],
+            "expansion": "Base"
+        },
+        {
+            "name": "Réforme",
+            "age": 4,
+            "color": "PURPLE",
+            "icons": [
+                4,
+                "LEAF",
+                "LEAF",
+                "LEAF"
+            ],
+            "dogmas": [
+                {
+                    "symbol": "LEAF",
+                    "text": "Vous pouvez choisir d'archiver une carte de votre Main pour chaque deux [Leaf] que vous produisez. Vous pouvez décaler vos cartes jaunes ou mauves à droite.",
+                    "isSupremacy": false
+                }
+            ],
+            "expansion": "Base"
+        },
+        {
+            "name": "Anatomie",
+            "age": 4,
+            "color": "YELLOW",
+            "icons": [
+                4,
+                "LEAF",
+                "LEAF",
+                "LEAF"
+            ],
+            "dogmas": [
+                {
+                    "symbol": "LEAF",
+                    "text": "J'exige que vous recycliez une carte de votre Influence ! Si vous subissez ce Dogme, recyclez une de vos cartes Actives de la même valeur que la carte recyclée si vous en avez une !",
+                    "isSupremacy": true
+                }
+            ],
+            "expansion": "Base"
+        },
+        {
+            "name": "Invention",
+            "age": 4,
+            "color": "GREEN",
+            "icons": [
+                4,
+                "LIGHTBULB",
+                "LIGHTBULB",
+                "FACTORY"
+            ],
+            "dogmas": [
+                {
+                    "symbol": "LIGHTBULB",
+                    "text": "Vous pouvez décaler une de vos couleurs, actuellement décalées à gauche, à droite. Si vous le faites, piochez une 4 et comptabilisez-la. Si vos cinq couleurs sont décalées, dominez le Domaine de la CULTURE.",
+                    "isSupremacy": false
+                }
+            ],
+            "expansion": "Base"
+        },
+        {
+            "name": "Expérimentation",
+            "age": 4,
+            "color": "BLUE",
+            "icons": [
+                4,
+                "LIGHTBULB",
+                "LIGHTBULB",
+                "LIGHTBULB"
+            ],
+            "dogmas": [
+                {
+                    "symbol": "LIGHTBULB",
+                    "text": "Piochez une 5 et mettez-la en jeu.",
+                    "isSupremacy": false
+                }
+            ],
+            "expansion": "Base"
+        },
+        {
+            "name": "Poudre",
+            "age": 4,
+            "color": "RED",
+            "icons": [
+                4,
+                "FACTORY",
+                "CROWN",
+                "FACTORY"
+            ],
+            "dogmas": [
+                {
+                    "symbol": "FACTORY",
+                    "text": "J'exige que vous transfériez une de vos cartes Actives qui produit du [Factory] vers mon Influence ! Si une carte ou plus a été transférée suite au Dogme de Suprématie, piochez une 2 et comptabilisez-la.",
+                    "isSupremacy": true
+                }
+            ],
+            "expansion": "Base"
+        },
+        {
+            "name": "Physique",
+            "age": 5,
+            "color": "BLUE",
+            "icons": [
+                "FACTORY",
+                "LIGHTBULB",
+                "LIGHTBULB",
+                5
+            ],
+            "dogmas": [
+                {
+                    "symbol": "LIGHTBULB",
+                    "text": "Piochez trois 6 et montrez-les. Si deux des cartes piochées ou plus sont de la même couleur, recyclez-les toutes ainsi que toutes les cartes de votre Main. Sinon, ajoutez-les à votre Main.",
+                    "isSupremacy": false
+                }
+            ],
+            "expansion": "Base"
+        },
+        {
+            "name": "Astronomie",
+            "age": 5,
+            "color": "PURPLE",
+            "icons": [
+                "CROWN",
+                "LIGHTBULB",
+                "LIGHTBULB",
+                5
+            ],
+            "dogmas": [
+                {
+                    "symbol": "LIGHTBULB",
+                    "text": "Piochez une 6 et montrez-la. Si la carte est verte ou bleue, mettez-la en jeu et répétez ce Dogme. Sinon, ajoutez-la à votre Main. Si toutes vos cartes Actives non-mauves valent 6 ou plus, dominez le Domaine des SCIENCES.",
+                    "isSupremacy": false
+                }
+            ],
+            "expansion": "Base"
+        },
+        {
+            "name": "Machine à Vapeur",
+            "age": 5,
+            "color": "YELLOW",
+            "icons": [
+                5,
+                "FACTORY",
+                "CROWN",
+                "FACTORY"
+            ],
+            "dogmas": [
+                {
+                    "symbol": "CROWN",
+                    "text": "Piochez deux 4 et archivez-les, puis comptabilisez la carte du dessous de votre pile jaune.",
+                    "isSupremacy": false
+                }
+            ],
+            "expansion": "Base"
+        },
+        {
+            "name": "Chimie",
+            "age": 5,
+            "color": "BLUE",
+            "icons": [
+                5,
+                "LIGHTBULB",
+                "FACTORY",
+                "FACTORY"
+            ],
+            "dogmas": [
+                {
+                    "symbol": "FACTORY",
+                    "text": "Vous pouvez décaler vos cartes bleues à droite. Piochez une carte d'une valeur supérieure de un à votre carte Active la plus élevée et comptabilisez-la, puis recyclez une carte de votre Influence.",
+                    "isSupremacy": false
+                }
+            ],
+            "expansion": "Base"
+        },
+        {
+            "name": "Statistiques",
+            "age": 5,
+            "color": "YELLOW",
+            "icons": [
+                5,
+                "LEAF",
+                "LEAF",
+                "LEAF"
+            ],
+            "dogmas": [
+                {
+                    "symbol": "LEAF",
+                    "text": "J'exige que vous transfériez la carte la plus élevée de votre Influence vers votre Main. Si vous subissez ce Dogme, et que vous n'avez qu'une carte en Main, subissez à nouveau ce Dogme ! Vous pouvez décaler vos cartes jaunes à droite.",
+                    "isSupremacy": true
+                }
+            ],
+            "expansion": "Base"
+        },
+        {
+            "name": "Théorie de la mesure",
+            "age": 5,
+            "color": "GREEN",
+            "icons": [
+                5,
+                "LEAF",
+                "LIGHTBULB",
+                "LIGHTBULB"
+            ],
+            "dogmas": [
+                {
+                    "symbol": "LIGHTBULB",
+                    "text": "Vous pouvez recycler une carte de votre Main. Si vous le faites, décalez une de vos couleurs à droite et piochez une carte de valeur égale au nombre de cartes de cette couleur que vous avez dans votre Zone de Jeu.",
+                    "isSupremacy": false
+                }
+            ],
+            "expansion": "Base"
+        },
+        {
+            "name": "Le Code des Pirates",
+            "age": 5,
+            "color": "RED",
+            "icons": [
+                5,
+                "FACTORY",
+                "CROWN",
+                "CROWN"
+            ],
+            "dogmas": [
+                {
+                    "symbol": "CROWN",
+                    "text": "J'exige que vous transfériez deux cartes de valeur inférieure ou égale à 4 de votre Influence vers la mienne ! Si une carte ou plus a été transférée suite au Dogme de Suprématie, comptabilisez votre carte Active qui produit du [Crown] ayant la valeur la plus basse.",
+                    "isSupremacy": true
+                }
+            ],
+            "expansion": "Base"
+        },
+        {
+            "name": "Charbon",
+            "age": 5,
+            "color": "RED",
+            "icons": [
+                5,
+                "FACTORY",
+                "FACTORY",
+                "FACTORY"
+            ],
+            "dogmas": [
+                {
+                    "symbol": "FACTORY",
+                    "text": "Piochez une 5 et archivez-la. Vous pouvez décaler vos cartes rouges à droite. Vous pouvez comptabiliser l'une de vos cartes Actives. Si vous le faites, comptabilisez également la carte qui se trouve en-dessous de cette carte.",
+                    "isSupremacy": false
+                }
+            ],
+            "expansion": "Base"
+        },
+        {
+            "name": "Système Bancaire",
+            "age": 5,
+            "color": "GREEN",
+            "icons": [
+                5,
+                "FACTORY",
+                "CROWN",
+                "CROWN"
+            ],
+            "dogmas": [
+                {
+                    "symbol": "CROWN",
+                    "text": "J'exige que vous transfériez une de vos cartes Actives non-vertes qui produit du [Factory] vers ma Zone de Jeu ! Si vous subissez ce Dogme, piochez une 5 et comptabilisez-la ! Vous pouvez décaler vos cartes vertes à droite.",
+                    "isSupremacy": true
+                }
+            ],
+            "expansion": "Base"
+        },
+        {
+            "name": "Compagnies Marchandes",
+            "age": 5,
+            "color": "PURPLE",
+            "icons": [
+                5,
+                "CROWN",
+                "LIGHTBULB",
+                "CROWN"
+            ],
+            "dogmas": [
+                {
+                    "symbol": "CROWN",
+                    "text": "J'exige que vous transfériez une de vos cartes Actives non-mauves qui produit du [Crown] vers ma Zone de Jeu ! Si vous subissez ce Dogme, piochez une 5 !",
+                    "isSupremacy": true
+                }
+            ],
+            "expansion": "Base"
+        },
+        {
+            "name": "Démocratie",
+            "age": 6,
+            "color": "PURPLE",
+            "icons": [
+                6,
+                "LIGHTBULB",
+                "LIGHTBULB",
+                "CROWN"
+            ],
+            "dogmas": [
+                {
+                    "symbol": "CROWN",
+                    "text": "Vous pouvez recycler autant de cartes de votre Main que vous voulez. Si vous en avez recyclé plus que tout autre joueur ne l'a fait avant vous pendant ce Dogme, piochez une 8 et comptabilisez-la.",
+                    "isSupremacy": false
+                }
+            ],
+            "expansion": "Base"
+        },
+        {
+            "name": "Système Métrique",
+            "age": 6,
+            "color": "GREEN",
+            "icons": [
+                6,
+                "FACTORY",
+                "CROWN",
+                "CROWN"
+            ],
+            "dogmas": [
+                {
+                    "symbol": "FACTORY",
+                    "text": "Si vos cartes vertes sont décalées à droite, vous pouvez décaler une autre de vos couleurs à droite. Vous pouvez décaler vos cartes vertes à droite.",
+                    "isSupremacy": false
+                }
+            ],
+            "expansion": "Base"
+        },
+        {
+            "name": "Machines-Outils",
+            "age": 6,
+            "color": "RED",
+            "icons": [
+                6,
+                "FACTORY",
+                "FACTORY",
+                "FACTORY"
+            ],
+            "dogmas": [
+                {
+                    "symbol": "FACTORY",
+                    "text": "Piochez une carte d'une valeur égale à la carte la plus élevée de votre Influence et comptabilisez-la.",
+                    "isSupremacy": false
+                }
+            ],
+            "expansion": "Base"
+        },
+        {
+            "name": "Encyclopédie",
+            "age": 6,
+            "color": "BLUE",
+            "icons": [
+                6,
+                "CROWN",
+                "CROWN",
+                "CROWN"
+            ],
+            "dogmas": [
+                {
+                    "symbol": "CROWN",
+                    "text": "Vous pouvez mettre en jeu toutes les cartes de votre Influence ayant la valeur la plus élevée.",
+                    "isSupremacy": false
+                }
+            ],
+            "expansion": "Base"
+        },
+        {
+            "name": "Conserves",
+            "age": 6,
+            "color": "YELLOW",
+            "icons": [
+                6,
+                "FACTORY",
+                "LEAF",
+                "FACTORY"
+            ],
+            "dogmas": [
+                {
+                    "symbol": "FACTORY",
+                    "text": "Vous pouvez piocher une 6 et l'archiver. Si vous le faites, comptabilisez toutes vos cartes Actives qui ne produisent pas de [Factory]. Vous pouvez décaler vos cartes jaunes à droite.",
+                    "isSupremacy": false
+                }
+            ],
+            "expansion": "Base"
+        },
+        {
+            "name": "Classification",
+            "age": 6,
+            "color": "GREEN",
+            "icons": [
+                6,
+                "LIGHTBULB",
+                "LIGHTBULB",
+                "LIGHTBULB"
+            ],
+            "dogmas": [
+                {
+                    "symbol": "LIGHTBULB",
+                    "text": "Montrez une carte de votre Main. Tous les joueurs doivent transférer toutes les cartes de la couleur de cette carte de leur Main vers la vôtre. Puis mettez en jeu toutes les cartes de cette couleur.",
+                    "isSupremacy": false
+                }
+            ],
+            "expansion": "Base"
+        },
+        {
+            "name": "Émancipation",
+            "age": 6,
+            "color": "PURPLE",
+            "icons": [
+                6,
+                "LIGHTBULB",
+                "FACTORY",
+                "FACTORY"
+            ],
+            "dogmas": [
+                {
+                    "symbol": "FACTORY",
+                    "text": "J'exige que vous transfériez une carte de votre Main vers mon Influence ! Si vous subissez ce Dogme piochez une 6 ! Vous pouvez décaler vos cartes rouges ou mauves à droite.",
+                    "isSupremacy": true
+                }
+            ],
+            "expansion": "Base"
+        },
+        {
+            "name": "Théorie de l'Atome",
+            "age": 6,
+            "color": "BLUE",
+            "icons": [
+                6,
+                "LIGHTBULB",
+                "LIGHTBULB",
+                "LIGHTBULB"
+            ],
+            "dogmas": [
+                {
+                    "symbol": "LIGHTBULB",
+                    "text": "Vous pouvez décaler vos cartes bleues à droite. Piochez une 7 et mettez-la en jeu.",
+                    "isSupremacy": false
+                }
+            ],
+            "expansion": "Base"
+        },
+        {
+            "name": "Vaccination",
+            "age": 6,
+            "color": "YELLOW",
+            "icons": [
+                6,
+                "LEAF",
+                "LEAF",
+                "LEAF"
+            ],
+            "dogmas": [
+                {
+                    "symbol": "LEAF",
+                    "text": "J'exige que vous recycliez toutes vos cartes ayant la valeur la plus basse de votre Influence ! Si vous subissez ce Dogme, piochez une 6 et mettez-la en jeu. Si une carte ou plus a été recyclée suite au Dogme de Suprématie, piochez une 7 et mettez-la en jeu.",
+                    "isSupremacy": true
+                }
+            ],
+            "expansion": "Base"
+        },
+        {
+            "name": "Industrialisation",
+            "age": 6,
+            "color": "RED",
+            "icons": [
+                6,
+                "FACTORY",
+                "FACTORY",
+                "FACTORY"
+            ],
+            "dogmas": [
+                {
+                    "symbol": "CROWN",
+                    "text": "Piochez une 6 pour chaque couleur présente dans votre Zone de Jeu. Mettez en jeu une carte de votre Main. Si vous avez mis en jeu une 6, répétez cet effet.",
+                    "isSupremacy": false
+                }
+            ],
+            "expansion": "Base"
+        },
+        {
+            "name": "Publications",
+            "age": 7,
+            "color": "BLUE",
+            "icons": [
+                7,
+                "LIGHTBULB",
+                "CLOCK",
+                "LIGHTBULB"
+            ],
+            "dogmas": [
+                {
+                    "symbol": "LIGHTBULB",
+                    "text": "Vous pouvez changer l'ordre des cartes d'une de vos couleurs. Vous pouvez décaler vos cartes jaunes ou bleues en haut.",
+                    "isSupremacy": false
+                }
+            ],
+            "expansion": "Base"
+        },
+        {
+            "name": "Explosifs",
+            "age": 7,
+            "color": "RED",
+            "icons": [
+                7,
+                "FACTORY",
+                "FACTORY",
+                "FACTORY"
+            ],
+            "dogmas": [
+                {
+                    "symbol": "FACTORY",
+                    "text": "J'exige que vous transfériez les trois cartes les plus élevées de votre Main vers la mienne ! Si vous en avez transféré au moins une et que vous n'avez plus de cartes en Main, piochez une 7 !",
+                    "isSupremacy": true
+                }
+            ],
+            "expansion": "Base"
+        },
+        {
+            "name": "Évolution",
+            "age": 7,
+            "color": "BLUE",
+            "icons": [
+                7,
+                "LIGHTBULB",
+                "LIGHTBULB",
+                "LIGHTBULB"
+            ],
+            "dogmas": [
+                {
+                    "symbol": "LIGHTBULB",
+                    "text": "Vous pouvez choisir soit de piocher une 8 et de la comptabiliser, puis de recycler une carte de votre Influence ; soit de piocher une carte d'une valeur supérieure de un à la carte la plus élevée de votre Influence.",
+                    "isSupremacy": false
+                }
+            ],
+            "expansion": "Base"
+        },
+        {
+            "name": "Électricité",
+            "age": 7,
+            "color": "GREEN",
+            "icons": [
+                7,
+                "FACTORY",
+                "LIGHTBULB",
+                "FACTORY"
+            ],
+            "dogmas": [
+                {
+                    "symbol": "LIGHTBULB",
+                    "text": "Recyclez toutes vos cartes Actives qui ne produisent pas de [Factory], puis piochez autant de 8 que de cartes recyclées.",
+                    "isSupremacy": false
+                }
+            ],
+            "expansion": "Base"
+        },
+        {
+            "name": "Éclairage",
+            "age": 7,
+            "color": "PURPLE",
+            "icons": [
+                7,
+                "LEAF",
+                "CLOCK",
+                "LEAF"
+            ],
+            "dogmas": [
+                {
+                    "symbol": "LEAF",
+                    "text": "Vous pouvez archiver jusqu'à trois cartes de votre Main. Si vous le faites, piochez une 7 pour chaque carte de valeur différente que vous avez archivée et comptabilisez-la.",
+                    "isSupremacy": false
+                }
+            ],
+            "expansion": "Base"
+        },
+        {
+            "name": "Chemin de Fer",
+            "age": 7,
+            "color": "PURPLE",
+            "icons": [
+                7,
+                "FACTORY",
+                "CLOCK",
+                "CLOCK"
+            ],
+            "dogmas": [
+                {
+                    "symbol": "CLOCK",
+                    "text": "Recyclez toutes les cartes de votre Main, puis piochez trois 6. Vous pouvez décaler une de vos couleurs actuellement décalées à droite en haut.",
+                    "isSupremacy": false
+                }
+            ],
+            "expansion": "Base"
+        },
+        {
+            "name": "Santé Publique",
+            "age": 7,
+            "color": "YELLOW",
+            "icons": [
+                7,
+                "LEAF",
+                "LEAF",
+                "LEAF"
+            ],
+            "dogmas": [
+                {
+                    "symbol": "LEAF",
+                    "text": "J'exige que vous échangiez les deux cartes les plus élevées de votre Main contre la carte la plus basse de la mienne !",
+                    "isSupremacy": true
+                }
+            ],
+            "expansion": "Base"
+        },
+        {
+            "name": "Moteur à Explosion",
+            "age": 7,
+            "color": "RED",
+            "icons": [
+                7,
+                "CROWN",
+                "FACTORY",
+                "FACTORY"
+            ],
+            "dogmas": [
+                {
+                    "symbol": "FACTORY",
+                    "text": "J'exige que vous transfériez deux cartes de votre Influence vers la mienne !",
+                    "isSupremacy": true
+                }
+            ],
+            "expansion": "Base"
+        },
+        {
+            "name": "Bicyclette",
+            "age": 7,
+            "color": "GREEN",
+            "icons": [
+                7,
+                "CROWN",
+                "CLOCK",
+                "CROWN"
+            ],
+            "dogmas": [
+                {
+                    "symbol": "CROWN",
+                    "text": "Vous pouvez échanger toutes les cartes de votre Main contre toutes les cartes de votre Influence.",
+                    "isSupremacy": false
+                }
+            ],
+            "expansion": "Base"
+        },
+        {
+            "name": "Réfrigération",
+            "age": 7,
+            "color": "YELLOW",
+            "icons": [
+                7,
+                "LEAF",
+                "LEAF",
+                "CROWN"
+            ],
+            "dogmas": [
+                {
+                    "symbol": "LEAF",
+                    "text": "J'exige que vous recycliez la moitié (arrondie à l'inférieur) des cartes que vous avez en Main ! Vous pouvez comptabiliser une carte de votre Main.",
+                    "isSupremacy": true
+                }
+            ],
+            "expansion": "Base"
+        },
+        {
+            "name": "Corporations",
+            "age": 8,
+            "color": "GREEN",
+            "icons": [
+                8,
+                "FACTORY",
+                "FACTORY",
+                "CROWN"
+            ],
+            "dogmas": [
+                {
+                    "symbol": "FACTORY",
+                    "text": "J'exige que vous transfériez une de vos cartes Actives non-vertes qui produit du [Factory] vers mon Influence ! Si vous subissez ce Dogme, piochez une 8 et mettez-la en jeu. Piochez une 8 et mettez-la en jeu.",
+                    "isSupremacy": true
+                }
+            ],
+            "expansion": "Base"
+        },
+        {
+            "name": "Antibiotiques",
+            "age": 8,
+            "color": "YELLOW",
+            "icons": [
+                8,
+                "LEAF",
+                "LEAF",
+                "LEAF"
+            ],
+            "dogmas": [
+                {
+                    "symbol": "LEAF",
+                    "text": "Vous pouvez recycler jusqu'à trois cartes de votre Main. Pour chaque carte recyclée de valeur différente, piochez deux 8.",
+                    "isSupremacy": false
+                }
+            ],
+            "expansion": "Base"
+        },
+        {
+            "name": "Scientisme",
+            "age": 8,
+            "color": "PURPLE",
+            "icons": [
+                8,
+                "LIGHTBULB",
+                "LIGHTBULB",
+                "LIGHTBULB"
+            ],
+            "dogmas": [
+                {
+                    "symbol": "LIGHTBULB",
+                    "text": "Choisissez deux couleurs, puis piochez une 9 et montrez-la. Si la carte est de l'une des deux couleurs choisies, mettez-la en jeu et vous pouvez décaler sa couleur en haut. Sinon, ajoutez-la à votre Main. Si vous produisez vingt [Bulb] ou plus, vous gagnez.",
+                    "isSupremacy": false
+                }
+            ],
+            "expansion": "Base"
+        },
+        {
+            "name": "Mobilité",
+            "age": 8,
+            "color": "RED",
+            "icons": [
+                8,
+                "FACTORY",
+                "CLOCK",
+                "FACTORY"
+            ],
+            "dogmas": [
+                {
+                    "symbol": "FACTORY",
+                    "text": "J'exige que vous transfériez vos deux cartes Actives non-rouges les plus élevées et qui ne produisent pas de [Factory] vers mon Influence ! Si vous en avez transféré une ou plus, piochez une 8 !",
+                    "isSupremacy": true
+                }
+            ],
+            "expansion": "Base"
+        },
+        {
+            "name": "Aviation",
+            "age": 8,
+            "color": "RED",
+            "icons": [
+                8,
+                "CROWN",
+                "CLOCK",
+                "CROWN"
+            ],
+            "dogmas": [
+                {
+                    "symbol": "CROWN",
+                    "text": "Si vos cartes rouges sont décalées en haut, vous pouvez décaler une de vos couleurs en haut. Vous pouvez décaler vos cartes rouges en haut.",
+                    "isSupremacy": false
+                }
+            ],
+            "expansion": "Base"
+        },
+        {
+            "name": "Média de Masse",
+            "age": 8,
+            "color": "GREEN",
+            "icons": [
+                8,
+                "LIGHTBULB",
+                "CLOCK",
+                "LIGHTBULB"
+            ],
+            "dogmas": [
+                {
+                    "symbol": "LIGHTBULB",
+                    "text": "Vous pouvez recycler une carte de votre Main. Si vous le faites, choisissez une valeur de carte et tous les joueurs (vous y compris) doivent recycler toutes leurs cartes d'Influence de cette valeur. Vous pouvez décaler vos cartes mauves en haut.",
+                    "isSupremacy": false
+                }
+            ],
+            "expansion": "Base"
+        },
+        {
+            "name": "Fusées",
+            "age": 8,
+            "color": "BLUE",
+            "icons": [
+                8,
+                "CLOCK",
+                "CLOCK",
+                "CLOCK"
+            ],
+            "dogmas": [
+                {
+                    "symbol": "CLOCK",
+                    "text": "Recyclez une carte de votre Influence adverse pour chaque deux [Clock] que vous produisez. Vous pouvez choisir des adversaires différents pour chaque carte.",
+                    "isSupremacy": false
+                }
+            ],
+            "expansion": "Base"
+        },
+        {
+            "name": "Théorie Quantique",
+            "age": 8,
+            "color": "BLUE",
+            "icons": [
+                8,
+                "CLOCK",
+                "CLOCK",
+                "CLOCK"
+            ],
+            "dogmas": [
+                {
+                    "symbol": "CLOCK",
+                    "text": "Vous pouvez recycler jusqu'à deux cartes de votre Main. Si vous en avez recyclé deux, piochez une 10 puis piochez une 10 et comptabilisez-la.",
+                    "isSupremacy": false
+                }
+            ],
+            "expansion": "Base"
+        },
+        {
+            "name": "Gratte-ciel",
+            "age": 8,
+            "color": "YELLOW",
+            "icons": [
+                8,
+                "FACTORY",
+                "CROWN",
+                "CROWN"
+            ],
+            "dogmas": [
+                {
+                    "symbol": "CROWN",
+                    "text": "J'exige que vous transfériez une de vos cartes Actives non-jaunes qui produit du [Crown] vers ma Zone de Jeu ! Si vous subissez ce Dogme, comptabilisez la première carte en-dessous de cette carte et recyclez les autres cartes de cette couleur !",
+                    "isSupremacy": true
+                }
+            ],
+            "expansion": "Base"
+        },
+        {
+            "name": "Communisme",
+            "age": 8,
+            "color": "PURPLE",
+            "icons": [
+                8,
+                "LEAF",
+                "LEAF",
+                "LEAF"
+            ],
+            "dogmas": [
+                {
+                    "symbol": "LEAF",
+                    "text": "Vous pouvez archiver toutes les cartes de votre Main. Si vous avez archivé une carte mauve ou plus, tous les joueurs doivent transférer toutes leurs cartes ayant la valeur la plus basse de leur Main vers la vôtre.",
+                    "isSupremacy": false
+                }
+            ],
+            "expansion": "Base"
+        },
+        {
+            "name": "Banlieues Chics",
+            "age": 9,
+            "color": "YELLOW",
+            "icons": [
+                9,
+                "CROWN",
+                "LEAF",
+                "LEAF"
+            ],
+            "dogmas": [
+                {
+                    "symbol": "LEAF",
+                    "text": "Vous pouvez archiver autant de cartes de votre Main que vous voulez. Piochez une 1 pour chaque carte archivée et comptabilisez-la.",
+                    "isSupremacy": false
+                }
+            ],
+            "expansion": "Base"
+        },
+        {
+            "name": "Services",
+            "age": 9,
+            "color": "PURPLE",
+            "icons": [
+                9,
+                "LEAF",
+                "LEAF",
+                "LEAF"
+            ],
+            "dogmas": [
+                {
+                    "symbol": "LEAF",
+                    "text": "J'exige que vous transfériez toutes les cartes ayant la valeur la plus élevée de votre Influence vers ma Main ! Si vous subissez ce Dogme, transférez une de mes cartes Actives qui ne produit pas de [Leaf] vers votre Main !",
+                    "isSupremacy": true
+                }
+            ],
+            "expansion": "Base"
+        },
+        {
+            "name": "Ordinateurs",
+            "age": 9,
+            "color": "BLUE",
+            "icons": [
+                9,
+                "CLOCK",
+                "CLOCK",
+                "FACTORY"
+            ],
+            "dogmas": [
+                {
+                    "symbol": "CLOCK",
+                    "text": "Vous pouvez décaler vos cartes rouges ou vertes en haut. Piochez une 10 et mettez-la en jeu, puis exécutez ses Dogmes Coopératifs sans les partager.",
+                    "isSupremacy": false
+                }
+            ],
+            "expansion": "Base"
+        },
+        {
+            "name": "Écologie",
+            "age": 9,
+            "color": "YELLOW",
+            "icons": [
+                9,
+                "LIGHTBULB",
+                "LIGHTBULB",
+                "LEAF"
+            ],
+            "dogmas": [
+                {
+                    "symbol": "LEAF",
+                    "text": "Vous pouvez recycler une carte de votre Main. Si vous le faites, comptabilisez une carte de votre Main et piochez deux 10.",
+                    "isSupremacy": false
+                }
+            ],
+            "expansion": "Base"
+        },
+        {
+            "name": "Spécialisation",
+            "age": 9,
+            "color": "PURPLE",
+            "icons": [
+                9,
+                "FACTORY",
+                "LEAF",
+                "FACTORY"
+            ],
+            "dogmas": [
+                {
+                    "symbol": "FACTORY",
+                    "text": "Montrez une carte de votre Main. Transférez la carte Active de vos adversaires ayant la même couleur vers votre Main. Vous pouvez décaler vos cartes jaunes ou bleues en haut.",
+                    "isSupremacy": false
+                }
+            ],
+            "expansion": "Base"
+        },
+        {
+            "name": "Fission",
+            "age": 9,
+            "color": "RED",
+            "icons": [
+                9,
+                "CLOCK",
+                "CLOCK",
+                "CLOCK"
+            ],
+            "dogmas": [
+                {
+                    "symbol": "CLOCK",
+                    "text": "J'exige que vous piochiez une 10 ! Si elle est rouge, défaussez toutes les cartes des Mains, des Zones de Jeu et des Influences de tous les joueurs (vous y compris) ! Recyclez une carte Active autre que FISSION de n'importe quel joueur.",
+                    "isSupremacy": true
+                }
+            ],
+            "expansion": "Base"
+        },
+        {
+            "name": "Génétique",
+            "age": 9,
+            "color": "BLUE",
+            "icons": [
+                9,
+                "LIGHTBULB",
+                "LIGHTBULB",
+                "LIGHTBULB"
+            ],
+            "dogmas": [
+                {
+                    "symbol": "LIGHTBULB",
+                    "text": "Piochez une 10 et mettez-la en jeu. Comptabilisez toutes les cartes qui sont en-dessous.",
+                    "isSupremacy": false
+                }
+            ],
+            "expansion": "Base"
+        },
+        {
+            "name": "Composites",
+            "age": 9,
+            "color": "RED",
+            "icons": [
+                9,
+                "FACTORY",
+                "FACTORY",
+                "FACTORY"
+            ],
+            "dogmas": [
+                {
+                    "symbol": "FACTORY",
+                    "text": "J'exige que vous transfériez toutes les cartes sauf une de votre Main vers la mienne ! De plus, transférez la carte la plus élevée de votre Influence vers la mienne !",
+                    "isSupremacy": true
+                }
+            ],
+            "expansion": "Base"
+        },
+        {
+            "name": "Coopération",
+            "age": 9,
+            "color": "GREEN",
+            "icons": [
+                9,
+                "CROWN",
+                "CLOCK",
+                "CROWN"
+            ],
+            "dogmas": [
+                {
+                    "symbol": "CROWN",
+                    "text": "J'exige que vous piochiez deux 9 et que vous les montriez ! Transférez la carte de mon choix vers ma Zone de Jeu, et mettez l'autre en jeu dans la vôtre ! Si vous avez dix cartes vertes ou plus dans votre Zone de Jeu, vous gagnez.",
+                    "isSupremacy": true
+                }
+            ],
+            "expansion": "Base"
+        },
+        {
+            "name": "Satellites",
+            "age": 9,
+            "color": "GREEN",
+            "icons": [
+                9,
+                "CLOCK",
+                "CLOCK",
+                "CLOCK"
+            ],
+            "dogmas": [
+                {
+                    "symbol": "CLOCK",
+                    "text": "Recyclez toutes les cartes de votre Main, puis piochez trois 8. Vous pouvez décaler vos cartes mauves en haut. Mettez en jeu une carte de votre Main, puis exécutez ses Dogmes Coopératifs sans les partager.",
+                    "isSupremacy": false
+                }
+            ],
+            "expansion": "Base"
+        },
+        {
+            "name": "Bio-Ingénierie",
+            "age": 10,
+            "color": "BLUE",
+            "icons": [
+                10,
+                "CLOCK",
+                "CLOCK",
+                "LIGHTBULB"
+            ],
+            "dogmas": [
+                {
+                    "symbol": "LIGHTBULB",
+                    "text": "Transférez une carte Active qui produit du [Leaf] de la Zone de Jeu du joueur de votre choix vers votre Influence. Si un joueur produit moins de trois [Leaf], le joueur qui produit le plus de [Leaf] gagne (en cas d'égalité, la partie continue).",
+                    "isSupremacy": false
+                }
+            ],
+            "expansion": "Base"
+        },
+        {
+            "name": "Bases de Données",
+            "age": 10,
+            "color": "GREEN",
+            "icons": [
+                10,
+                "CLOCK",
+                "CLOCK",
+                "CLOCK"
+            ],
+            "dogmas": [
+                {
+                    "symbol": "CLOCK",
+                    "text": "J'exige que vous recycliez la moitié (arrondie au supérieur) des cartes de votre Influence !",
+                    "isSupremacy": true
+                }
+            ],
+            "expansion": "Base"
+        },
+        {
+            "name": "Intelligence Artificielle",
+            "age": 10,
+            "color": "PURPLE",
+            "icons": [
+                10,
+                "LIGHTBULB",
+                "CLOCK",
+                "LIGHTBULB"
+            ],
+            "dogmas": [
+                {
+                    "symbol": "LIGHTBULB",
+                    "text": "Piochez une 10 et comptabilisez-la. Si ROBOTIQUE et LOGICIEL sont toutes les deux Actives, même dans des Zones de Jeu différentes, le joueur qui a le moins de points d'Influence gagne.",
+                    "isSupremacy": false
+                }
+            ],
+            "expansion": "Base"
+        },
+        {
+            "name": "Cellules Souches",
+            "age": 10,
+            "color": "YELLOW",
+            "icons": [
+                10,
+                "LEAF",
+                "LEAF",
+                "LEAF"
+            ],
+            "dogmas": [
+                {
+                    "symbol": "LEAF",
+                    "text": "Vous pouvez comptabiliser toutes les cartes de votre Main.",
+                    "isSupremacy": false
+                }
+            ],
+            "expansion": "Base"
+        },
+        {
+            "name": "Robotique",
+            "age": 10,
+            "color": "RED",
+            "icons": [
+                10,
+                "FACTORY",
+                "CLOCK",
+                "FACTORY"
+            ],
+            "dogmas": [
+                {
+                    "symbol": "FACTORY",
+                    "text": "Comptabilisez votre carte Active verte. Piochez une 10 et mettez-la en jeu, puis exécutez ses Dogmes Coopératifs sans les partager.",
+                    "isSupremacy": false
+                }
+            ],
+            "expansion": "Base"
+        },
+        {
+            "name": "Mondialisation",
+            "age": 10,
+            "color": "YELLOW",
+            "icons": [
+                10,
+                "FACTORY",
+                "FACTORY",
+                "FACTORY"
+            ],
+            "dogmas": [
+                {
+                    "symbol": "FACTORY",
+                    "text": "J'exige que vous recycliez une de vos cartes Actives qui produit du [Leaf] ! Piochez une 6 et comptabilisez-la. Si aucun joueur ne produit plus de [Leaf] que de [Factory], le joueur qui a le plus de points d'Influence gagne.",
+                    "isSupremacy": true
+                }
+            ],
+            "expansion": "Base"
+        },
+        {
+            "name": "Miniaturisation",
+            "age": 10,
+            "color": "RED",
+            "icons": [
+                10,
+                "LIGHTBULB",
+                "CLOCK",
+                "LIGHTBULB"
+            ],
+            "dogmas": [
+                {
+                    "symbol": "LIGHTBULB",
+                    "text": "Vous pouvez recycler une carte de votre Main. Si vous avez recyclé une 10, piochez une 10 pour chaque valeur différente dans votre Influence.",
+                    "isSupremacy": false
+                }
+            ],
+            "expansion": "Base"
+        },
+        {
+            "name": "Domotique",
+            "age": 10,
+            "color": "GREEN",
+            "icons": [
+                10,
+                "CROWN",
+                "CROWN",
+                "CROWN"
+            ],
+            "dogmas": [
+                {
+                    "symbol": "CROWN",
+                    "text": "Exécutez les Dogmes Coopératifs d'une autre de vos cartes Actives sans les partager. Si vous êtes le joueur avec le plus de Dominations, vous gagnez.",
+                    "isSupremacy": false
+                }
+            ],
+            "expansion": "Base"
+        },
+        {
+            "name": "Logiciel",
+            "age": 10,
+            "color": "BLUE",
+            "icons": [
+                10,
+                "CLOCK",
+                "CLOCK",
+                "CLOCK"
+            ],
+            "dogmas": [
+                {
+                    "symbol": "CLOCK",
+                    "text": "Piochez une 10 et comptabilisez-la. Piochez deux 10 et mettez-les en jeu dans l'ordre, puis exécutez les Dogmes Coopératifs de la seconde carte sans les partager.",
+                    "isSupremacy": false
+                }
+            ],
+            "expansion": "Base"
+        },
+        {
+            "name": "Internet",
+            "age": 10,
+            "color": "PURPLE",
+            "icons": [
+                10,
+                "CLOCK",
+                "CLOCK",
+                "LIGHTBULB"
+            ],
+            "dogmas": [
+                {
+                    "symbol": "CLOCK",
+                    "text": "Vous pouvez décaler vos cartes vertes en haut. Piochez une 10 et comptabilisez-la. Piochez une 10 pour chaque deux [Clock] que vous produisez et mettez-la en jeu.",
+                    "isSupremacy": false
+                }
+            ],
+            "expansion": "Base"
+        }
+    ]
+}

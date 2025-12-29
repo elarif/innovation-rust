@@ -1,0 +1,130 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "https://innovation-game-engine/schemas/card-schema-v2.json",
+    "title": "Innovation Card Database Schema (Revised)",
+    "description": "Schema structurel basé sur les règles officielles (Jeu de base)",
+    "definitions": {
+        "ResourceIcon": {
+            "type": "string",
+            "enum": [
+                "CROWN",
+                "LEAF",
+                "FACTORY",
+                "LIGHTBULB",
+                "CASTLE",
+                "CLOCK"
+            ],
+            "description": "Les symboles de ressources. CROWN=Couronne, LEAF=Feuille, FACTORY=Usine, LIGHTBULB=Ampoule, CASTLE=Château, CLOCK=Horloge [cite: 10, 19, 203]"
+        },
+        "DogmaEffect": {
+            "type": "object",
+            "required": [
+                "symbol",
+                "text"
+            ],
+            "properties": {
+                "symbol": {
+                    "$ref": "#/definitions/ResourceIcon",
+                    "description": "L'icône affichée à gauche du texte du dogme. Elle indique la ressource requise pour l'activer ou être affecté[cite: 103]."
+                },
+                "text": {
+                    "type": "string",
+                    "minLength": 1,
+                    "description": "Le texte complet de l'effet (ex: 'Piochez une 1...'). Inclut les instructions de type 'J'exige'[cite: 28, 108]."
+                },
+                "isSupremacy": {
+                    "type": "boolean",
+                    "default": false,
+                    "description": "Vrai si le texte commence par 'J'exige' (Dogme de Suprématie), Faux si c'est un Dogme Coopératif[cite: 111, 118]."
+                }
+            }
+        },
+        "Card": {
+            "type": "object",
+            "required": [
+                "name",
+                "age",
+                "color",
+                "icons",
+                "dogmas"
+            ],
+            "properties": {
+                "name": {
+                    "type": "string",
+                    "description": "Nom unique de l'innovation (ex: 'Outils', 'La Roue')[cite: 7]."
+                },
+                "age": {
+                    "type": "integer",
+                    "minimum": 1,
+                    "maximum": 10,
+                    "description": "Numéro de la Période (1 à 10)[cite: 5, 18]."
+                },
+                "color": {
+                    "type": "string",
+                    "enum": [
+                        "RED",
+                        "YELLOW",
+                        "GREEN",
+                        "BLUE",
+                        "PURPLE"
+                    ],
+                    "description": "Couleur de la carte déterminant la pile d'empilement[cite: 19, 29]."
+                },
+                "icons": {
+                    "type": "array",
+                    "items": {
+                        "oneOf": [
+                            {
+                                "$ref": "#/definitions/ResourceIcon"
+                            },
+                            {
+                                "type": "integer",
+                                "minimum": 1,
+                                "maximum": 10
+                            }
+                        ]
+                    },
+                    "minItems": 4,
+                    "maxItems": 4,
+                    "description": "Les 4 emplacements physiques d'icônes sur la carte: [Haut-Gauche, Bas-Gauche, Bas-Centre, Bas-Droite]. Le Haut-Gauche est souvent le chiffre de l'Âge dans le jeu de base[cite: 169]."
+                },
+                "dogmas": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/DogmaEffect"
+                    },
+                    "minItems": 1,
+                    "description": "Liste ordonnée des effets de dogme (du haut vers le bas). Une carte peut en avoir plusieurs."
+                }
+            }
+        }
+    },
+    "type": "object",
+    "required": [
+        "version",
+        "cards"
+    ],
+    "properties": {
+        "version": {
+            "type": "string",
+            "pattern": "^\\d+\\.\\d+\\.\\d+$"
+        },
+        "metadata": {
+            "type": "object",
+            "properties": {
+                "cardCount": {
+                    "type": "integer"
+                },
+                "source": {
+                    "type": "string"
+                }
+            }
+        },
+        "cards": {
+            "type": "array",
+            "items": {
+                "$ref": "#/definitions/Card"
+            }
+        }
+    }
+}
