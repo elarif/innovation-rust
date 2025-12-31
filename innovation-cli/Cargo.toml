@@ -5,3 +5,6 @@ edition = "2021"
 
 [dependencies]
 innovation-core = { path = "../innovation-core" }
+clap = { version = "4.0", features = ["derive"] }
+rand = "0.8"
+rustyline = "12.0"
