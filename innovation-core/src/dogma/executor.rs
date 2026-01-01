@@ -3,11 +3,25 @@ use crate::errors::GameError;
 use crate::dogma::flow::DogmaExecutionState;
 
 pub fn execute_dogma(state: &mut GameState, player_id: usize, card_id: String) -> Result<(), GameError> {
-    // 1. Initialize State
+    // 1. Validate card is active (on top of a pile on player's board)
+    let player = &state.players[player_id];
+    let is_active = player.board.values()
+        .any(|pile| pile.top() == Some(&card_id));
+    
+    if !is_active {
+        return Err(GameError::InvalidAction(format!(
+            "Cannot activate dogma: '{}' is not an active card on your board", card_id
+        )));
+    }
+    
+    // Log dogma activation
+    state.action_log.push(format!("P{} active le dogme de '{}'", player_id, card_id));
+    
+    // 2. Initialize State
     let execution_state = DogmaExecutionState::new(card_id.clone(), 0, player_id, Vec::new());
     state.dogma_state = Some(execution_state);
     
-    // 2. Start Execution
+    // 3. Start Execution
     continue_execution(state, None)
 }
 
@@ -102,13 +116,16 @@ pub fn continue_execution(state: &mut GameState, mut input: Option<String>) -> R
             
             execution_state.sub_step.reset();
             
+            // Track sharing: if this player is NOT the activator and this is NOT a supremacy dogma
+            // then an opponent benefited from a cooperative dogma
+            if pid != execution_state.activator_id && !dogma.is_supremacy {
+                execution_state.anyone_shared = true;
+            }
+            
             // Advance player
             execution_state.current_player_index += 1;
             state.dogma_state = Some(execution_state.clone());
         }
-        
-        // Sharing bonus check
-        // ...
         
         // Advance dogma
         execution_state.dogma_index += 1;
@@ -116,6 +133,14 @@ pub fn continue_execution(state: &mut GameState, mut input: Option<String>) -> R
         execution_state.eligible_players.clear();
         execution_state.sub_step.reset();
         state.dogma_state = Some(execution_state.clone());
+    }
+    
+    // Sharing bonus: if any opponent benefited from a cooperative dogma, activator draws a free card
+    if execution_state.anyone_shared {
+        let activator = execution_state.activator_id;
+        if let Some(card_id) = state.draw_age(activator, 1)? {
+            state.action_log.push(format!("P{} pioche '{}' (bonus de coopération)", activator, card_id));
+        }
     }
     
     // Finished
@@ -158,7 +183,9 @@ fn execute_effect_tree(state: &mut GameState, player_id: usize, effect: &crate::
         Effect::Draw { amount, age } => {
             let target_age = (*age).unwrap_or(1);
             for _ in 0..*amount {
-                state.draw_age(player_id, target_age)?;
+                if let Some(card_id) = state.draw_age(player_id, target_age)? {
+                    state.action_log.push(format!("P{} drew '{}'", player_id, card_id));
+                }
             }
             Ok(())
         },
@@ -166,6 +193,7 @@ fn execute_effect_tree(state: &mut GameState, player_id: usize, effect: &crate::
              let target_age = (*age).unwrap_or(1);
              for _ in 0..*amount {
                  if let Some(cid) = state.draw_age(player_id, target_age)? {
+                     state.action_log.push(format!("P{} drew and melded '{}'", player_id, cid));
                      state.meld(player_id, cid)?;
                  }
              }
@@ -632,6 +660,12 @@ fn execute_draw_until_no_match(
         if let Some(cid) = state.draw_age(player_id, age)? {
             let card = db.get(&cid).ok_or_else(|| GameError::CardNotFound(cid.clone()))?;
             
+            // Get condition symbol for logging
+            let condition_symbol = match condition {
+                DrawnCardCondition::HasIcon(sym) => format!("{:?}", sym),
+                DrawnCardCondition::ColorOnBoard => "couleur sur plateau".to_string(),
+            };
+            
             let matches = match condition {
                 DrawnCardCondition::HasIcon(sym) => {
                     card.icons.iter().any(|icon| match icon {
@@ -644,25 +678,42 @@ fn execute_draw_until_no_match(
                 },
             };
             
+            // Format card icons for logging
+            let card_icons: String = card.icons.iter()
+                .filter_map(|icon| match icon {
+                    crate::model::Icon::Resource(s) => Some(format!("{:?}", s)),
+                    _ => None
+                })
+                .collect::<Vec<_>>()
+                .join(", ");
+            
             if matches {
+                state.action_log.push(format!(
+                    "P{} pioche '{}'. Elle produit {} → comptabilisée!",
+                    player_id, cid, condition_symbol
+                ));
+                
                 // Execute on_match effect (typically Score)
-                // Card is in hand from draw, need to handle based on effect
                 match on_match {
                     crate::model::Effect::Score { .. } => {
                         state.remove_from_hand(player_id, &cid)?;
                         state.score_card(player_id, cid)?;
                     },
                     _ => {
-                        // Generic: execute effect tree
                         execute_effect_tree(state, player_id, on_match, None)?;
                     }
                 }
+                state.action_log.push(format!("P{} répète l'effet...", player_id));
             } else {
+                state.action_log.push(format!(
+                    "P{} pioche '{}'. Elle ne produit pas {} → gardée en main.",
+                    player_id, cid, condition_symbol
+                ));
                 // Keep in hand and stop
                 break;
             }
         } else {
-            // No more cards to draw
+            state.action_log.push(format!("P{}: plus de cartes à piocher.", player_id));
             break;
         }
     }

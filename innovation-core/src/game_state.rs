@@ -34,6 +34,7 @@ pub struct GameState {
     
     pub pending_input: Option<crate::dogma::flow::InputRequest>,
     pub dogma_state: Option<crate::dogma::flow::DogmaExecutionState>,
+    pub action_log: Vec<String>, // Log of recent actions for display
 }
 
 impl GameState {
@@ -67,16 +68,23 @@ impl GameState {
             players.push(Player::new(i));
         }
         
+        // Logging for initial draws
+        let mut action_log = Vec::new();
+        action_log.push("=== Début de la partie ===".to_string());
+        
         // Deal Initial Hands (2 cards of Age 1)
-        for p in &mut players {
+        for (i, p) in players.iter_mut().enumerate() {
             if let Some(pile) = deck.get_mut(&1) {
                 for _ in 0..2 {
                     if let Some(card_id) = pile.pop() {
+                        action_log.push(format!("P{} pioche '{}' (Age 1)", i, card_id));
                         p.hand.push(card_id);
                     }
                 }
             }
         }
+        
+        action_log.push("--- Phase de Setup: chaque joueur pose une carte ---".to_string());
         
         Self {
             rng,
@@ -91,6 +99,7 @@ impl GameState {
             phase: if cfg!(test) { GamePhase::Main } else { GamePhase::Setup },
             initial_melds: HashMap::new(),
             actions_taken: 0,
+            action_log,
         }
     }
     
@@ -104,6 +113,9 @@ impl GameState {
                     if !p.hand.contains(&card_id) {
                         return Err(GameError::InvalidAction("Card not in hand".into()));
                     }
+                    
+                    // Log setup meld
+                    self.action_log.push(format!("P{} choisit de poser '{}'", self.current_player, card_id));
                     
                     // 2. Meld logic (reuse generic meld or inline)
                     self.meld(self.current_player, card_id.clone())?;
@@ -132,6 +144,10 @@ impl GameState {
                              }
                         }
                         
+                        // Log first player determination
+                        self.action_log.push(format!("--- P{} commence (carte '{}' première alphabétiquement) ---", first_player, first_card));
+                        self.action_log.push(format!("=== Tour {} - P{} ===", self.turn_number, first_player));
+                        
                         self.current_player = first_player;
                         self.phase = GamePhase::Main;
                         self.actions_taken = 0;
@@ -153,6 +169,7 @@ impl GameState {
                  Ok(())
             },
             Action::Meld(card_id) => {
+                 self.action_log.push(format!("P{} pose '{}'", self.current_player, card_id));
                  self.meld(self.current_player, card_id)?;
                  self.finish_action()?;
                  Ok(())
@@ -162,8 +179,22 @@ impl GameState {
                  self.finish_action()?;
                  Ok(())
             },
-            Action::Dogma(card_id) => crate::dogma::executor::execute_dogma(self, self.current_player, card_id),
-            Action::ResolveInput(input) => crate::dogma::executor::continue_execution(self, Some(input)),
+            Action::Dogma(card_id) => {
+                crate::dogma::executor::execute_dogma(self, self.current_player, card_id)?;
+                // Only count as action if dogma completed (no pending input)
+                if self.pending_input.is_none() {
+                    self.finish_action()?;
+                }
+                Ok(())
+            },
+            Action::ResolveInput(input) => {
+                crate::dogma::executor::continue_execution(self, Some(input))?;
+                // Count action when dogma fully resolves
+                if self.pending_input.is_none() && self.dogma_state.is_none() {
+                    self.finish_action()?;
+                }
+                Ok(())
+            },
         }
     }
     
@@ -198,13 +229,19 @@ impl GameState {
         
         if self.actions_taken >= actions_limit {
             self.actions_taken = 0;
+            let prev_player = self.current_player;
             self.current_player = (self.current_player + 1) % self.players.len();
-            if self.current_player == self.initial_melds.iter()
+            
+            let first_player = self.initial_melds.iter()
                 .min_by_key(|(_, card)| card.clone())
                 .map(|(pid, _)| *pid)
-                .unwrap_or(0) { // Full round
+                .unwrap_or(0);
+            
+            if self.current_player == first_player { // Full round
                  self.turn_number += 1;
+                 self.action_log.push(format!("=== Tour {} ===", self.turn_number));
             }
+            self.action_log.push(format!("--- Au tour de P{} ---", self.current_player));
         }
         Ok(())
     }
@@ -235,6 +272,7 @@ impl GameState {
             
             if let Some(deck_pile) = self.deck.get_mut(&age) {
                 if let Some(card_id) = deck_pile.pop() {
+                    self.action_log.push(format!("P{} pioche '{}' (Age {})", player_id, card_id, age));
                     if let Some(p) = self.players.get_mut(player_id) {
                         p.hand.push(card_id);
                     }
