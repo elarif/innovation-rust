@@ -2,7 +2,6 @@
 members = [
     "innovation-core",
     "innovation-cli",
-    "innovation-tui",
     "innovation-web",
 ]
 resolver = "2"
